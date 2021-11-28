@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,12 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hesap Makinesi</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <div class="container">
     <div class="ust">
       <p id="degisken"></p>
+      
+      <p id="storage"></p>
+    
 
     </div>
     <div class="row">
@@ -37,15 +42,17 @@
       </div>
     </div>
     <div class="column">
-      <button id="clr" onclick="sill()">C</button>
+      <button id="clr" onclick="clearr()">C</button>
       <button class="btn" onclick="numbers(0)">0</button>
-      <button id="dot" onclick="operation('.')">,</button>
+      <button id="dot" onclick="operation('.')">.</button>
       <button class="opr" onclick="operation('/')">/</button>
       
     </div>
     <div class="column">
-      
       <button class="opr" id="opr" onclick="calculate()">=</button>
+      <button class="opr" id="back" onclick="backspace()">
+        <i class="fas fa-backspace"></i>
+      </button>
     </div>
   </div>
 </div>
